@@ -1,0 +1,153 @@
+@media only screen and (min-width: 737px) {
+  ul {
+      flex-direction: row;
+  }
+  .responsive li {
+      min-width: 200px;
+  }
+  
+  .logobox {
+      display: grid;
+      flex-direction: column;
+      align-items: center;
+      margin: 0px 30px;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  #date {
+      grid-column: 6;
+  }
+
+  .logo {
+      max-width: 100%;
+      max-height: 50px;
+      padding-left: 2rem;
+  }
+
+  .title {
+      align-self: center;
+  }
+
+  #date {
+      align-self: center;
+  }
+
+  .twitter {
+      width: 64px;
+      height: 64px;
+  }
+  main {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: 
+          "banner banner banner"
+          "news news news"
+          "spotlight spotlight spotlight"
+          "join join join"
+          "event event weather";
+      gap: 10px;
+  }
+  .herobanner {
+      grid-area: banner;
+      border-style: none;
+      background-color: #b9f377;
+      border-radius: 15px;
+  }
+  
+  .join{
+    grid-area: banner;
+    border-style: none;
+    background-color: #b9f377;
+    border-radius: 15px;
+  }
+
+  .joinlink {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0.75rem;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fffc32;
+    font-weight: 700;
+    text-align: center;
+    transition: 0.5s;
+    background-color: #296d09;
+    border-radius: 5px;
+    justify-content: center;
+  }
+
+  .event {
+      grid-area: event;
+      background-color: #b9f377;
+      border-style: none;
+      text-align: justify;
+      font-size: large;
+      border-radius: 15px;
+  }
+
+  .eventname {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .weather {
+      background-color: #b9f377;
+      border-style: none;
+      text-align: justify;
+      border-radius: 15px;
+      border-style: none;
+  }
+
+  .servicelist {
+    border-style: none;
+    text-align: justify;
+
+  }
+
+  .joininvite {
+    text-align: center;
+    font-size: 25px;
+    
+  }
+
+  .news {
+      grid-area: news;
+      border-radius: 15px;
+      border-style: none;
+      background-color: #b9f377;
+      text-align: justify;
+      font-size: 18px;
+  }
+
+  .spotlights {
+    grid-area: news;
+    border-radius: 15px;
+    border-style: none;
+    background-color: #b9f377;
+    text-align: justify;
+    font-size: 20px;
+  }
+
+  .new_releases {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .join {
+      display: block;
+      grid-area: join;
+      border-radius: 15px;
+      font-size: 18px;
+      
+  }
+  .spotlights {
+      grid-area: spotlight;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      border-radius: 15px;
+  }
+  
+}
